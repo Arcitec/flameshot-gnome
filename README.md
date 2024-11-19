@@ -77,3 +77,20 @@ Uninstall:
   to remember "Flameshot has no permissions" forever. A user has provided some
   [instructions](https://github.com/flameshot-org/flameshot/issues/2868#issuecomment-1384310540)
   for a script that resets the screenshot permissions, if you need to try again.
+
+
+### How do I use this with the Flatpak version of Flameshot?
+
+- You **don't.**
+- The Flatpak process already does the necessary forking that makes GNOME happy,
+  and allows Flameshot to work on GNOME. You don't need this utility.
+- After installing the Flatpak, you must manually grant the screenshot permission
+  though, since the Flatpak version will never ask for permission automatically,
+  regardless of whether you run it in a terminal or from a keyboard shortcut.
+- To grant permission for the Flameshot Flatpak to take screenshots on GNOME,
+  run `flatpak permission-set screenshot screenshot org.flameshot.Flameshot yes`
+  (and in case you're wondering, yes, the "screenshot screenshot" is necessary).
+- Now you can use the application or create your Keyboard Shortcuts. Just execute
+  the Flameshot commands as follows; `flatpak run org.flameshot.Flameshot gui`
+  (you can of course replace `gui` with any of the other Flameshot options).
+- Enjoy!
