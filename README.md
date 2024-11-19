@@ -45,6 +45,22 @@ Uninstall:
 - Set **"Name"** to `Screenshot`.
 - Set **"Command"** to `flameshot-gnome gui`.
 - Set **"Shortcut"** to anything you want (**Super + Shift + S** is popular).
+- You have now created a shortcut which brings up Flameshot's interactive GUI
+  for capturing and annotating screenshots.
+- Tip: GNOME has a built-in shortcut for capturing the entire screen, which
+  always saves the images as huge PNG files and spams your notifications with
+  new screenshot alerts. If you just want a shortcut that immediately captures
+  the whole screen and saves it using Flameshot's default image compression
+  settings (the "Preferred save file extension" in `flameshot-gnome config`),
+  you can achieve that by creating another shortcut with the following command:
+  `flameshot-gnome screen -p '/home/yourname/Pictures/Screenshots'`. You can
+  use any path you want, but must manually create the directory if it's missing.
+  You can name this shortcut `Screenshot (Full, Direct Save)`, with the hotkey
+  **Shift + PrintScreen.**
+- Tip: There are many other command-line Flameshot features which you can use for
+  automating your screenshots. To see the available options, append `--help` to
+  a Flameshot command and read the documentation, such as
+  `flameshot-gnome gui --help` or `flameshot-gnome screen --help`.
 - Have fun!
 
 
