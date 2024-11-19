@@ -8,11 +8,11 @@ Anytime you would call `flameshot`, just call `flameshot-gnome` instead!
 
 ### Requirements
 
-Building:
+Build Dependencies:
 
 - `gcc` (GNU C Compiler)
 
-Running:
+Runtime Dependencies:
 
 - `flameshot` (The Flameshot binary itself must *also* be installed natively on
   the machine and exist in `$PATH`. No containers/sandboxes such as Flatpak!
