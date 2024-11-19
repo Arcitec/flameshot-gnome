@@ -46,3 +46,18 @@ Uninstall:
 - Set **"Command"** to `flameshot-gnome gui`.
 - Set **"Shortcut"** to anything you want (**Super + Shift + S** is popular).
 - Have fun!
+
+
+### Giving Screenshot Permissions to Flameshot on GNOME
+
+- The first time you take a screenshot with Flameshot on Wayland, GNOME will ask
+  if you really want to share your screen with the application. Say yes.
+- GNOME 43 and above will remember the screenshot portal permission for every
+  application, so that you only have to say yes once.
+- The permission dialog will automatically appear the first time you use the
+  custom Flameshot keyboard shortcut (see above), but you can also try running
+  the `flameshot-gnome gui` command manually in a Terminal to force it to appear.
+- Tip: If you've ever said "No" during the first permission dialog, GNOME seems
+  to remember "Flameshot has no permissions" forever. A user has provided some
+  [instructions](https://github.com/flameshot-org/flameshot/issues/2868#issuecomment-1384310540)
+  for a script that resets the screenshot permissions, if you need to try again.
